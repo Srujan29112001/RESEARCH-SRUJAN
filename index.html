@@ -1,0 +1,1091 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Srujan | Research Portfolio</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet"/>
+<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet"/>
+<link href="style.css" rel="stylesheet"/>
+<style>
+/* === Clamp project descriptions to 3 lines === */
+#projects .project-card .project-content p {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;              /* future spec */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  overflow-wrap: anywhere;    /* prevent layout breaking on long strings */
+}
+</style>
+
+</head>
+<body>
+<canvas class="particle-canvas-fixed" id="particle-canvas"></canvas>
+<div class="loader" id="loader">
+<div class="loader-content">
+<div class="loader-cube">
+<div class="face"></div>
+<div class="face"></div>
+<div class="face"></div>
+<div class="face"></div>
+<div class="face"></div>
+<div class="face"></div>
+</div>
+<p class="loader-text">Initializing Research Systems...</p>
+<div class="loader-progress"></div>
+</div>
+</div>
+<div class="progress-bar" id="progress-bar"></div>
+<div class="cursor-trail" id="cursor-trail"></div>
+<nav class="navbar" id="navbar">
+<div class="container nav-container">
+<div class="nav-brand">
+<img alt="Logo" class="logo" src="Images/Bestlogo.png"/>
+</div>
+<ul class="nav-menu" id="nav-menu">
+<li><a class="nav-link active" href="#home">Home</a></li>
+<li><a class="nav-link" href="#skills">Skills</a></li>
+<li><a class="nav-link" href="#tech-stack">Tech Stack</a></li>
+<li><a class="nav-link" href="#projects">Projects</a></li>
+<li><a class="nav-link" href="#certifications">Certifications</a></li>
+<li><a class="nav-link" href="#contact">Contact</a></li>
+</ul>
+<div class="nav-extras">
+<a class="btn-back-home" href="https://srujan29112001.github.io/SRUJAN/">
+<i class="fas fa-home"></i>
+<span>Main</span>
+</a>
+<button class="theme-toggle" id="theme-toggle"><i class="fas fa-moon"></i></button>
+<button class="motion-toggle" id="motion-toggle"><i class="fas fa-eye"></i></button>
+<div class="hamburger" id="hamburger">
+<span></span>
+<span></span>
+<span></span>
+</div>
+</div>
+</div>
+</nav>
+<section class="hero" id="home">
+<div class="container hero-content">
+<div class="hero-inner">
+<div class="hero-text">
+<p class="hero-greeting">Welcome to my Research Universe</p>
+<h1 class="hero-name">
+<span class="gradient-text-ai glitch" data-text="Artificial Intelligence">Research</span>
+</h1>
+<div class="hero-subtitle">
+<span id="typing-text"></span>
+<span class="cursor">|</span>
+</div>
+<p class="hero-tagline">~Harnessing Computational Intelligence for
+
+the of Space and Life Sciences
+
+from Genome to Galaxy~</p>
+<div class="hero-cta">
+<a class="btn btn-primary" href="#projects">
+<span>Explore Projects</span>
+<i class="fas fa-rocket"></i>
+</a>
+<a class="btn btn-secondary" href="#skills">
+<span>View Skills</span>
+<i class="fas fa-brain"></i>
+</a>
+</div>
+</div>
+</div>
+<div class="scroll-indicator">
+<span></span>
+<span></span>
+<span></span>
+</div>
+</div>
+</section>
+<section class="skills-section" id="skills">
+<div class="container">
+<h2 class="section-title" data-aos="fade-up">My Research <span class="gradient-text-ai">Skills</span></h2>
+<div class="skills-content">
+
+  <!-- 1) Applied Computational Mathematics and Sciences (visible) -->
+  <div class="skill-category" data-aos="fade-up">
+    <div class="skill-card">
+      <div class="skill-icon"><i class="fas fa-atom"></i></div>
+      <h3>Applied Computational Mathematics &amp; Sciences</h3>
+      <div class="skill-items">
+        <div class="skill-item">
+          <h4>Quantum &amp; Classical Physics Simulations</h4>
+          <p>Time-dependent Schrödinger Equation solvers, Quantum wavepacket dynamics with Gaussian distributions, Orbital mechanics for celestial bodies, Quantum particle detection probability analysis</p>
+        </div>
+        <div class="skill-item">
+          <h4>Chaos &amp; Nonlinear Systems</h4>
+          <p>Lorenz Attractor simulations, Double Pendulum with Spring dynamics, Phase space analysis, Sensitivity to initial conditions, Lyapunov exponents</p>
+        </div>
+        <div class="skill-item">
+          <h4>Electromagnetic &amp; Epidemiological Modeling</h4>
+          <p>Biot–Savart Law for magnetic field calculations, COVID-19 spread simulation with SIR/SEIR models, Transmission dynamics and intervention strategies</p>
+        </div>
+        <div class="skill-item">
+          <h4>Numerical Methods &amp; Computational Physics</h4>
+          <p>Fourier analysis and spectral methods, Finite element analysis, ODE/PDE solvers, Monte Carlo simulations</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 2) Space Science & Astronomy (visible) -->
+  <div class="skill-category" data-aos="fade-up">
+    <div class="skill-card">
+      <div class="skill-icon"><i class="fas fa-rocket"></i></div>
+      <h3>Space Science &amp; Astronomy</h3>
+      <div class="skill-items">
+        <div class="skill-item">
+          <h4>Exoplanet Detection &amp; Analysis</h4>
+          <p>Light curve processing from Kepler/TESS missions, Transit photometry and Box Least Squares periodogram, Phase-folding techniques, Orbital period determination</p>
+        </div>
+        <div class="skill-item">
+          <h4>Astronomical Data Processing</h4>
+          <p>Lightkurve library for Kepler data, Pixel file analysis and aperture photometry, Trend removal and noise reduction, Signal validation and candidate screening</p>
+        </div>
+        <div class="skill-item">
+          <h4>Orbital Mechanics &amp; Celestial Dynamics</h4>
+          <p>N-body problem simulations, Gravitational interactions, Trajectory optimization, Kepler's laws applications</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 3) Artificial Intelligence & Machine Learning (hidden) -->
+  <div class="skill-category hidden-skill" data-aos="fade-up">
+    <div class="skill-card">
+      <div class="skill-icon"><i class="fas fa-brain"></i></div>
+      <h3>Artificial Intelligence &amp; Machine Learning</h3>
+      <div class="skill-items">
+        <div class="skill-item">
+          <h4>Deep Learning Architectures</h4>
+          <p>YOLOv7 for object detection in aerial imagery, U-Net for biomedical image segmentation, Segment Anything Model (SAM) for automated segmentation, AlphaFold for 3D protein structure prediction</p>
+        </div>
+        <div class="skill-item">
+          <h4>Traditional Machine Learning</h4>
+          <p>Support Vector Machines (SVM) for classification, Logistic Regression, Genetic Algorithms for optimization, Feature engineering and model validation</p>
+        </div>
+        <div class="skill-item">
+          <h4>Time Series &amp; Forecasting</h4>
+          <p>NeuralProphet for trend analysis, Temporal pattern recognition, Predictive modeling</p>
+        </div>
+        <div class="skill-item">
+          <h4>AI Frameworks &amp; Libraries</h4>
+          <p>PyTorch, TensorFlow, JAX, OpenMM, CrewAI for autonomous task orchestration</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 4) Computer Vision & Image Analysis (hidden) -->
+  <div class="skill-category hidden-skill" data-aos="fade-up">
+    <div class="skill-card">
+      <div class="skill-icon"><i class="fas fa-eye"></i></div>
+      <h3>Computer Vision &amp; Image Analysis</h3>
+      <div class="skill-items">
+        <div class="skill-item">
+          <h4>Medical Imaging</h4>
+          <p>Brain tumor MRI classification (97%+ accuracy), Breast cancer tumor analysis, Neuron segmentation in microscopy (0.92 IoU), Cell detection and morphology analysis</p>
+        </div>
+        <div class="skill-item">
+          <h4>Satellite &amp; Aerial Object Detection</h4>
+          <p>YOLOv7 deployment on edge devices, Real-time inference at 22 FPS, 89% mAP on custom datasets, NVIDIA Jetson optimization</p>
+        </div>
+        <div class="skill-item">
+          <h4>Astronomical Imaging</h4>
+          <p>Light curve analysis, Stellar object detection, Phase-folded transit visualization</p>
+        </div>
+        <div class="skill-item">
+          <h4>Segmentation Techniques</h4>
+          <p>Semantic segmentation for geological analysis (sandstone, 96% accuracy), Instance segmentation with Meta's SAM, Automated mask generation and refinement</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 5) Computational Biology & Bioinformatics (hidden) -->
+  <div class="skill-category hidden-skill" data-aos="fade-up">
+    <div class="skill-card">
+      <div class="skill-icon"><i class="fas fa-dna"></i></div>
+      <h3>Computational Biology &amp; Bioinformatics</h3>
+      <div class="skill-items">
+        <div class="skill-item">
+          <h4>Protein Structure Prediction</h4>
+          <p>AlphaFold 2 implementation, Multiple Sequence Alignment (MSA) with Jackhmmer, UniRef90 and smallBFD database searches, Sub-ångström RMSD accuracy, pLDDT confidence scoring (90%+)</p>
+        </div>
+        <div class="skill-item">
+          <h4>Structural Biology Analysis</h4>
+          <p>PDB file generation and processing, 3D visualization with py3Dmol, OpenMM for structural relaxation, Drug discovery applications</p>
+        </div>
+        <div class="skill-item">
+          <h4>Biomedical Image Analysis</h4>
+          <p>Neuron and cell segmentation, Tumor classification from MRI scans, Microscopy image processing, Quantitative morphology analysis</p>
+        </div>
+        <div class="skill-item">
+          <h4>Genetic &amp; Evolutionary Algorithms</h4>
+          <p>Population-based optimization, Crossover and mutation operators, Fitness function design, Convergence analysis</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 6) Embedded Systems & Edge Computing (hidden) -->
+  <div class="skill-category hidden-skill" data-aos="fade-up">
+    <div class="skill-card">
+      <div class="skill-icon"><i class="fas fa-microchip"></i></div>
+      <h3>Embedded Systems &amp; Edge Computing</h3>
+      <div class="skill-items">
+        <div class="skill-item">
+          <h4>NVIDIA Jetson Platform</h4>
+          <p>Jetson Nano and AGX Xavier deployment, Model optimization with TensorRT, CUDA programming for GPU acceleration, Real-time AI inference at the edge</p>
+        </div>
+        <div class="skill-item">
+          <h4>Aerial Vehicle Integration</h4>
+          <p>Pixhawk flight controller communication, Sensor fusion for autonomous navigation, YOLOv7 deployment on drones, 95% real-world accuracy</p>
+        </div>
+        <div class="skill-item">
+          <h4>Performance Optimization</h4>
+          <p>Model quantization and pruning, Latency reduction techniques, Power-efficient inference, 22 FPS on resource-constrained hardware</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 7) Simulation & Mathematical Modeling (hidden) -->
+  <div class="skill-category hidden-skill" data-aos="fade-up">
+    <div class="skill-card">
+      <div class="skill-icon"><i class="fas fa-chart-line"></i></div>
+      <h3>Simulation &amp; Mathematical Modeling</h3>
+      <div class="skill-items">
+        <div class="skill-item">
+          <h4>Cellular Automata</h4>
+          <p>Rule 30, Rule 110, Rule 126 implementations, Conway's Game of Life, Emergent behavior analysis, Self-replication and chaos patterns</p>
+        </div>
+        <div class="skill-item">
+          <h4>Evolutionary Algorithms &amp; Population Models</h4>
+          <p>Genetic algorithm optimization, Elite selection strategies, Mutation and crossover techniques, 95%+ fitness convergence, SIR/SEIR epidemiological models</p>
+        </div>
+        <div class="skill-item">
+          <h4>Fractal Geometry &amp; Recursive Visualization</h4>
+          <p>Hilbert Curve generation, Maurer Rose patterns with p5.js, Barnsley Fern with 95% naturalistic accuracy, Probabilistic affine transformations</p>
+        </div>
+        <div class="skill-item">
+          <h4>Physics-Based Simulations</h4>
+          <p>Hamiltonian mechanics, Lagrangian dynamics, Energy conservation analysis, Phase space trajectories</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 8) Programming & Development Tools (hidden) -->
+  <div class="skill-category hidden-skill" data-aos="fade-up">
+    <div class="skill-card">
+      <div class="skill-icon"><i class="fas fa-toolbox"></i></div>
+      <h3>Programming &amp; Development Tools</h3>
+      <div class="skill-items">
+        <div class="skill-item">
+          <h4>Programming Languages</h4>
+          <p>Python (primary), JavaScript, p5.js for creative coding, HTML/CSS for web visualization, C++ for performance-critical applications</p>
+        </div>
+        <div class="skill-item">
+          <h4>Scientific Computing Libraries</h4>
+          <p>NumPy for numerical computations, SciPy for scientific algorithms, SymPy for symbolic mathematics, Matplotlib for data visualization, Pandas for data manipulation</p>
+        </div>
+        <div class="skill-item">
+          <h4>Computer Vision &amp; ML Frameworks</h4>
+          <p>OpenCV for image processing, PyTorch and TensorFlow for deep learning, Lightkurve for astronomical data, cellpylib for cellular automata, Turtle Graphics for animations</p>
+        </div>
+        <div class="skill-item">
+          <h4>Development Environments</h4>
+          <p>VS Code for general development, Jupyter Lab for research notebooks, Google Colab for GPU-accelerated experiments, Git for version control</p>
+        </div>
+        <div class="skill-item">
+          <h4>AI Agent Orchestration</h4>
+          <p>CrewAI for multi-agent systems, Autonomous task coordination, Agent-based modeling</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 9) Data Analysis & Visualization (hidden) -->
+  <div class="skill-category hidden-skill" data-aos="fade-up">
+    <div class="skill-card">
+      <div class="skill-icon"><i class="fas fa-chart-area"></i></div>
+      <h3>Data Analysis &amp; Visualization</h3>
+      <div class="skill-items">
+        <div class="skill-item">
+          <h4>Statistical Analysis</h4>
+          <p>Hypothesis testing, Probability distributions, Regression analysis, Cross-validation techniques</p>
+        </div>
+        <div class="skill-item">
+          <h4>Time-Frequency Analysis</h4>
+          <p>Fourier transforms (FFT), Spectral analysis, Wavelet transforms, Signal processing</p>
+        </div>
+        <div class="skill-item">
+          <h4>Interactive Visualizations</h4>
+          <p>Matplotlib for publication-quality plots, p5.js for dynamic animations, 3D visualization with py3Dmol, Real-time data streaming</p>
+        </div>
+        <div class="skill-item">
+          <h4>Scientific Plotting</h4>
+          <p>Phase diagrams, Contour plots, Polar coordinate systems, Multi-panel figures</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 10) Research Methodology & Soft Skills (hidden) -->
+  <div class="skill-category hidden-skill" data-aos="fade-up">
+    <div class="skill-card">
+      <div class="skill-icon"><i class="fas fa-people-arrows"></i></div>
+      <h3>Research Methodology &amp; Soft Skills</h3>
+      <div class="skill-items">
+        <div class="skill-item">
+          <h4>Scientific Problem Solving</h4>
+          <p>Hypothesis formulation and testing, Experimental design, Quantitative validation, Error analysis and uncertainty quantification</p>
+        </div>
+        <div class="skill-item">
+          <h4>Interdisciplinary Research</h4>
+          <p>Cross-domain integration (space science, biology, AI), Physics-informed machine learning, Computational modeling across scales</p>
+        </div>
+        <div class="skill-item">
+          <h4>Technical Communication</h4>
+          <p>Scientific documentation and technical writing, Code documentation with Jupyter notebooks, Public GitHub repositories, Research reproducibility</p>
+        </div>
+        <div class="skill-item">
+          <h4>Computational Thinking</h4>
+          <p>Algorithm design and optimization, Complexity analysis, Scalability considerations, Performance benchmarking</p>
+        </div>
+        <div class="skill-item">
+          <h4>Ethics &amp; Security</h4>
+          <p>Cybersecurity awareness, Privacy and anonymity best practices, Dark web fundamentals, Responsible AI development, Bias mitigation in ML models</p>
+        </div>
+        <div class="skill-item">
+          <h4>Continuous Learning</h4>
+          <p>Rapid prototyping of emerging AI technologies, Adaptation to new frameworks and tools, Staying current with research literature</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<div class="skills-toggle-container">
+<button class="btn btn-primary" id="see-more-skills">
+<span>See More</span>
+<i class="fas fa-chevron-down"></i>
+</button>
+<button class="btn btn-secondary hidden" id="minimize-skills">
+<span>Show Less</span>
+<i class="fas fa-chevron-up"></i>
+</button>
+</div>
+</div>
+</section>
+
+<!-- ============ Technical Expertise Section ============ -->
+<section class="tech-stack-section" id="tech-stack">
+<div class="container">
+<h2 class="section-title" data-aos="fade-up">
+Technical <span class="gradient-text-ai">Expertise</span>
+</h2>
+<p class="tech-stack-subtitle" data-aos="fade-up">Interdisciplinary research expertise spanning space science, computational biology, and AI</p>
+
+<div class="tech-categories">
+
+<!-- Space Science & Astronomy -->
+<div class="tech-category" data-aos="fade-up">
+<h3 class="tech-category-title">Space Science & Astronomy</h3>
+<div class="tech-grid">
+<div class="tech-card">
+<div class="tech-card-header">
+<span class="tech-icon">🔭</span>
+<span class="tech-name">Exoplanet Detection</span>
+</div>
+<div class="tech-progress-bar">
+<div class="tech-progress-fill" data-progress="92"></div>
+</div>
+<span class="tech-percentage">92%</span>
+</div>
+<div class="tech-card">
+<div class="tech-card-header">
+<span class="tech-icon">📊</span>
+<span class="tech-name">Light Curve Analysis</span>
+</div>
+<div class="tech-progress-bar">
+<div class="tech-progress-fill" data-progress="90"></div>
+</div>
+<span class="tech-percentage">90%</span>
+</div>
+<div class="tech-card">
+<div class="tech-card-header">
+<span class="tech-icon">🌌</span>
+<span class="tech-name">Orbital Mechanics</span>
+</div>
+<div class="tech-progress-bar">
+<div class="tech-progress-fill" data-progress="88"></div>
+</div>
+<span class="tech-percentage">88%</span>
+</div>
+<div class="tech-card">
+<div class="tech-card-header">
+<span class="tech-icon">📡</span>
+<span class="tech-name">Kepler/TESS Data Processing</span>
+</div>
+<div class="tech-progress-bar">
+<div class="tech-progress-fill" data-progress="90"></div>
+</div>
+<span class="tech-percentage">90%</span>
+</div>
+</div>
+</div>
+
+<!-- Computational Biology & Bioinformatics -->
+<div class="tech-category" data-aos="fade-up">
+<h3 class="tech-category-title">Computational Biology & Bioinformatics</h3>
+<div class="tech-grid">
+<div class="tech-card">
+<div class="tech-card-header">
+<span class="tech-icon">🧬</span>
+<span class="tech-name">AlphaFold (Protein Prediction)</span>
+</div>
+<div class="tech-progress-bar">
+<div class="tech-progress-fill" data-progress="88"></div>
+</div>
+<span class="tech-percentage">88%</span>
+</div>
+<div class="tech-card">
+<div class="tech-card-header">
+<span class="tech-icon">🔬</span>
+<span class="tech-name">Neuron Segmentation</span>
+</div>
+<div class="tech-progress-bar">
+<div class="tech-progress-fill" data-progress="92"></div>
+</div>
+<span class="tech-percentage">92%</span>
+</div>
+<div class="tech-card">
+<div class="tech-card-header">
+<span class="tech-icon">🧠</span>
+<span class="tech-name">Medical Image Analysis</span>
+</div>
+<div class="tech-progress-bar">
+<div class="tech-progress-fill" data-progress="95"></div>
+</div>
+<span class="tech-percentage">95%</span>
+</div>
+<div class="tech-card">
+<div class="tech-card-header">
+<span class="tech-icon">🔍</span>
+<span class="tech-name">Structural Biology</span>
+</div>
+<div class="tech-progress-bar">
+<div class="tech-progress-fill" data-progress="85"></div>
+</div>
+<span class="tech-percentage">85%</span>
+</div>
+<div class="tech-card">
+<div class="tech-card-header">
+<span class="tech-icon">🧪</span>
+<span class="tech-name">Genetic Algorithms</span>
+</div>
+<div class="tech-progress-bar">
+<div class="tech-progress-fill" data-progress="90"></div>
+</div>
+<span class="tech-percentage">90%</span>
+</div>
+</div>
+</div>
+
+<!-- Quantum & Classical Physics -->
+<div class="tech-category" data-aos="fade-up">
+<h3 class="tech-category-title">Quantum & Classical Physics</h3>
+<div class="tech-grid">
+<div class="tech-card">
+<div class="tech-card-header">
+<span class="tech-icon">⚛️</span>
+<span class="tech-name">Schrödinger Equation</span>
+</div>
+<div class="tech-progress-bar">
+<div class="tech-progress-fill" data-progress="90"></div>
+</div>
+<span class="tech-percentage">90%</span>
+</div>
+<div class="tech-card">
+<div class="tech-card-header">
+<span class="tech-icon">🌀</span>
+<span class="tech-name">Chaos Theory</span>
+</div>
+<div class="tech-progress-bar">
+<div class="tech-progress-fill" data-progress="88"></div>
+</div>
+<span class="tech-percentage">88%</span>
+</div>
+<div class="tech-card">
+<div class="tech-card-header">
+<span class="tech-icon">📐</span>
+<span class="tech-name">Hamiltonian Mechanics</span>
+</div>
+<div class="tech-progress-bar">
+<div class="tech-progress-fill" data-progress="85"></div>
+</div>
+<span class="tech-percentage">85%</span>
+</div>
+<div class="tech-card">
+<div class="tech-card-header">
+<span class="tech-icon">🎯</span>
+<span class="tech-name">Fourier Analysis</span>
+</div>
+<div class="tech-progress-bar">
+<div class="tech-progress-fill" data-progress="92"></div>
+</div>
+<span class="tech-percentage">92%</span>
+</div>
+</div>
+</div>
+
+<!-- Machine Learning & AI -->
+<div class="tech-category" data-aos="fade-up">
+<h3 class="tech-category-title">Machine Learning & AI</h3>
+<div class="tech-grid">
+<div class="tech-card">
+<div class="tech-card-header">
+<span class="tech-icon">🎯</span>
+<span class="tech-name">YOLOv7 Detection</span>
+</div>
+<div class="tech-progress-bar">
+<div class="tech-progress-fill" data-progress="95"></div>
+</div>
+<span class="tech-percentage">95%</span>
+</div>
+<div class="tech-card">
+<div class="tech-card-header">
+<span class="tech-icon">🔷</span>
+<span class="tech-name">U-Net Segmentation</span>
+</div>
+<div class="tech-progress-bar">
+<div class="tech-progress-fill" data-progress="92"></div>
+</div>
+<span class="tech-percentage">92%</span>
+</div>
+<div class="tech-card">
+<div class="tech-card-header">
+<span class="tech-icon">✂️</span>
+<span class="tech-name">Segment Anything (SAM)</span>
+</div>
+<div class="tech-progress-bar">
+<div class="tech-progress-fill" data-progress="90"></div>
+</div>
+<span class="tech-percentage">90%</span>
+</div>
+<div class="tech-card">
+<div class="tech-card-header">
+<span class="tech-icon">📈</span>
+<span class="tech-name">SVM & Classical ML</span>
+</div>
+<div class="tech-progress-bar">
+<div class="tech-progress-fill" data-progress="95"></div>
+</div>
+<span class="tech-percentage">95%</span>
+</div>
+<div class="tech-card">
+<div class="tech-card-header">
+<span class="tech-icon">🤖</span>
+<span class="tech-name">Multi-Agent AI (CrewAI)</span>
+</div>
+<div class="tech-progress-bar">
+<div class="tech-progress-fill" data-progress="85"></div>
+</div>
+<span class="tech-percentage">85%</span>
+</div>
+</div>
+</div>
+
+<!-- Mathematical Modeling & Simulation -->
+<div class="tech-category" data-aos="fade-up">
+<h3 class="tech-category-title">Mathematical Modeling & Simulation</h3>
+<div class="tech-grid">
+<div class="tech-card">
+<div class="tech-card-header">
+<span class="tech-icon">🔢</span>
+<span class="tech-name">Cellular Automata</span>
+</div>
+<div class="tech-progress-bar">
+<div class="tech-progress-fill" data-progress="92"></div>
+</div>
+<span class="tech-percentage">92%</span>
+</div>
+<div class="tech-card">
+<div class="tech-card-header">
+<span class="tech-icon">🌿</span>
+<span class="tech-name">Fractal Generation</span>
+</div>
+<div class="tech-progress-bar">
+<div class="tech-progress-fill" data-progress="95"></div>
+</div>
+<span class="tech-percentage">95%</span>
+</div>
+<div class="tech-card">
+<div class="tech-card-header">
+<span class="tech-icon">🧮</span>
+<span class="tech-name">Numerical Methods</span>
+</div>
+<div class="tech-progress-bar">
+<div class="tech-progress-fill" data-progress="90"></div>
+</div>
+<span class="tech-percentage">90%</span>
+</div>
+<div class="tech-card">
+<div class="tech-card-header">
+<span class="tech-icon">🦠</span>
+<span class="tech-name">Epidemiological Models</span>
+</div>
+<div class="tech-progress-bar">
+<div class="tech-progress-fill" data-progress="88"></div>
+</div>
+<span class="tech-percentage">88%</span>
+</div>
+</div>
+</div>
+
+<!-- Programming & Scientific Computing -->
+<div class="tech-category" data-aos="fade-up">
+<h3 class="tech-category-title">Programming & Scientific Computing</h3>
+<div class="tech-grid">
+<div class="tech-card">
+<div class="tech-card-header">
+<span class="tech-icon">🐍</span>
+<span class="tech-name">Python</span>
+</div>
+<div class="tech-progress-bar">
+<div class="tech-progress-fill" data-progress="95"></div>
+</div>
+<span class="tech-percentage">95%</span>
+</div>
+<div class="tech-card">
+<div class="tech-card-header">
+<span class="tech-icon">🔢</span>
+<span class="tech-name">NumPy/SciPy</span>
+</div>
+<div class="tech-progress-bar">
+<div class="tech-progress-fill" data-progress="92"></div>
+</div>
+<span class="tech-percentage">92%</span>
+</div>
+<div class="tech-card">
+<div class="tech-card-header">
+<span class="tech-icon">📊</span>
+<span class="tech-name">Matplotlib/Visualization</span>
+</div>
+<div class="tech-progress-bar">
+<div class="tech-progress-fill" data-progress="95"></div>
+</div>
+<span class="tech-percentage">95%</span>
+</div>
+<div class="tech-card">
+<div class="tech-card-header">
+<span class="tech-icon">🎨</span>
+<span class="tech-name">p5.js/JavaScript</span>
+</div>
+<div class="tech-progress-bar">
+<div class="tech-progress-fill" data-progress="88"></div>
+</div>
+<span class="tech-percentage">88%</span>
+</div>
+<div class="tech-card">
+<div class="tech-card-header">
+<span class="tech-icon">🔥</span>
+<span class="tech-name">PyTorch/TensorFlow</span>
+</div>
+<div class="tech-progress-bar">
+<div class="tech-progress-fill" data-progress="90"></div>
+</div>
+<span class="tech-percentage">90%</span>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+</section>
+
+<section class="projects-section" id="projects">
+<div class="container">
+<h2 class="section-title" data-aos="fade-up">Featured Research <span class="gradient-text-ai">Projects</span></h2>
+<div class="projects-grid">
+
+  <div class="project-card">
+    <div class="project-image"><i class="fa-solid fa-earth-americas"></i></div>
+    <div class="project-content">
+      <h3>Exoplanet Detection via Light Curves</h3>
+      <p>This project identifies exoplanets by processing Kepler/TESS mission data using Python's Lightkurve library. Light curves of stars are extracted from pixel files, flattened to remove noise, and phase-folded to amplify periodic transit signals. A Box Least Squares (BLS) periodogram pinpoints orbital periods, enabling the detection of a candidate exoplanet with a 5.7-day orbital period, 2-hour transit duration, and 0.1% flux dip—metrics consistent with Earth-sized planets. By automating trend removal and signal validation, the project achieved >95% confidence in transit detection, demonstrating an efficient pipeline for exoplanet candidate screening.</p>
+      <div class="project-links">
+        <a class="btn btn-outline" href="https://drive.google.com/file/d/1KXcRJdTl0CW1dJ_MxOBg3a3t6YhAz9qM/view?usp=sharing" target="_blank"><i class="fas fa-file-alt"></i> Docs</a>
+        <a class="btn btn-primary" href="https://drive.google.com/file/d/1LQff1VixZMduQ_hDVV2I9tHSOJWIolez/view?usp=sharing" target="_blank"><i class="fas fa-play"></i> Demo</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="project-card ">
+    <div class="project-image"><i class="fa-solid fa-dna"></i></div>
+    <div class="project-content">
+      <h3>3D Protein Structure Prediction Using AlphaFold</h3>
+      <p>This project leverages AlphaFold's deep learning framework to predict high-accuracy 3D protein structures from amino acid sequences. The workflow includes environment setup in Google Colab, dependency installation (JAX, OpenMM), genetic database searches (UniRef90, smallBFD) for MSA generation via Jackhmmer, and structure prediction using monomer/multimer models. Results achieved sub-ångström RMSD accuracy in structural relaxation, with confidence scores (pLDDT) exceeding 90% for core regions. Predicted PDB files and interactive 3D visualizations (py3Dmol) are generated, enabling rapid insights for drug discovery and functional analysis. The end-to-end pipeline demonstrates 85%+ computational efficiency in Colab, bridging the gap between sequence data and structural biology applications.</p>
+      <div class="project-links">
+        <a class="btn btn-outline" href="https://drive.google.com/file/d/1-tHGikDQ0KsKPzh1gkqWQimGbgzbCwzo/view?usp=sharing" target="_blank"><i class="fas fa-file-alt"></i> Docs</a>
+        <a class="btn btn-primary" href="https://drive.google.com/file/d/1UXka9_8ueddFWr2_LIjX3dsi6l4Sc0aJ/view?usp=drive_link" target="_blank"><i class="fas fa-play"></i> Demo</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="project-card ">
+    <div class="project-image"><i class="fa-solid fa-border-none"></i></div>
+    <div class="project-content">
+      <h3>Quantum Particle Detection Dynamics</h3>
+      <p>This project analyzes the spatiotemporal evolution of a quantum particle initially localized as a Gaussian wavepacket with zero average momentum. By computing ⟨p²⟩ classically, we derived the arrival time T = mLℏ²/(2a²) (simplified to L² for unit parameters) and contrasted it with quantum dynamics via Fourier expansion and time-dependent Schrödinger solutions. Using SymPy for symbolic derivations and SciPy for numerical integration, we calculated the time-evolving probability P(x&gt;L,t), observing non-zero detection probabilities even at t&lt;T, a hallmark of quantum behavior. Results showed P rising gradually from 0% to ~50% over t=0→30, deviating sharply from the classical prediction of abrupt detection at T. Visualizations highlighted this discrepancy, underscoring quantum tunneling and wavepacket dispersion. The project bridges classical intuition with quantum reality, leveraging computational tools (NumPy, Matplotlib) to quantify and visualize probabilistic dynamics.</p>
+      <div class="project-links">
+        <a class="btn btn-outline" href="https://drive.google.com/file/d/12XYJe34e7WApSzFrnGbV_7lyn9rkIH5S/view?usp=sharing" target="_blank"><i class="fas fa-file-alt"></i> Docs</a>
+        <a class="btn btn-primary" href="https://drive.google.com/file/d/1kwQhBWSqk0v61aSamhB1i5ZLjmVYpnu9/view?usp=sharing" target="_blank"><i class="fas fa-play"></i> Demo</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="project-card secondary-project">
+    <div class="project-image"><i class="fa-solid fa-copyright"></i></div>
+    <div class="project-content">
+      <h3>NeuroPsych Trading Assistant: A Neuromorphic Multi-Agent System with Brain-Computer Interface for Computational Psychiatry in Financial Markets</h3>
+      <p>The NeuroPsych Trading Assistant represents a groundbreaking convergence of neuromorphic computing, computational psychiatry, robotics, and electronic systems design to address the critical mental health crisis among retail traders. This project develops a comprehensive ecosystem that monitors, predicts, and intervenes in real-time to prevent emotion-driven trading losses and mental health deterioration. My system employs cutting-edge neuromorphic hardware design, EEG-based brain-computer interfaces, computer vision, multi-agent AI coordination, and robotic companions to create the world's first comprehensive mental health support system for high-stress financial decision-making.</p>
+      <div class="project-links">
+        <a class="btn btn-outline" href="#" target="_blank"><i class="fas fa-file-alt"></i> Docs  (Coming Soon)</a> <a class="btn btn-primary" href="#" target="_blank"><i class="fas fa-play"></i> Demo  (Coming Soon)</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="project-card secondary-project">
+    <div class="project-image"><i class="fa-solid fa-house-signal"></i></div>
+    <div class="project-content">
+      <h3>Engineering (UG) Group Project (Capstone Project)</h3>
+      <p>Visible light Communication System (LiFi based PC to PC communication System).</p>
+      <div class="project-links">
+        <a class="btn btn-outline" href="https://drive.google.com/file/d/1xaGgViC6ZqSG_RMIFcPvBzCTVtBHB8PN/view?usp=sharing" target="_blank"><i class="fas fa-file-alt"></i> Docs</a>
+        <a class="btn btn-primary" href="https://drive.google.com/file/d/1LoNq_7YDIDbSJ2BDyVCWGmynYpG1KhDB/view?usp=drive_link" target="_blank"><i class="fas fa-play"></i> Demo</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="project-card secondary-project">
+    <div class="project-image"><i class="fa-solid fa-wand-sparkles"></i></div>
+    <div class="project-content">
+      <h3>Cellular Automata Dynamics Explorer</h3>
+      <p>This project simulates and visualizes emergent behaviors in 1D/2D cellular automata using Python, cellpylib, and Matplotlib. By implementing rules like Rule 30, Rule 110, Conway's Game of Life, and Totalistic Rule 126, it demonstrates how simple rules generate complex patterns. Custom animations (up to 250 timesteps) reveal phase transitions, self-replication, and chaos. Key outcomes: simulated 4+ rules across 1D/2D models, quantified emergent behaviors (e.g., glider propagation in Game of Life), and interactive visualizations showing rule-dependent evolution. The project bridges theoretical concepts with computational experimentation, highlighting cellular automata's role in complexity science and generative systems.</p>
+      <div class="project-links">
+        <a class="btn btn-outline" href="https://drive.google.com/file/d/1-mWXbkm4SXeZNGVXM8Y2xHCfKallwKqs/view?usp=sharing" target="_blank"><i class="fas fa-file-alt"></i> Docs</a>
+        <a class="btn btn-primary" href="https://drive.google.com/file/d/16DRNkKl4_CKk-Bjgc4iUxLL6zG0w_6wp/view?usp=drive_link" target="_blank"><i class="fas fa-play"></i> Demo</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="project-card secondary-project">
+    <div class="project-image"><i class="fa-solid fa-dna"></i></div>
+    <div class="project-content">
+      <h3>Simulation Of Evolution</h3>
+      <p>This project simulates evolutionary principles using a genetic algorithm to optimize a population of randomly generated images toward a target color. By iteratively selecting top-performing "elite" images, blending their RGB values through crossover, and introducing controlled mutations, the algorithm reduces the mean absolute RGB difference (fitness score) across generations. Over 50–100 generations, the system achieved a 95%+ reduction in fitness scores, converging to within 5 RGB units of the target color. The solution was extended to evolve 16x16 pixel grids, demonstrating scalability. Key metrics include mutation rate optimization (0.1–5%), elite retention (10–20%), and fitness-driven convergence, highlighting genetic algorithms' effectiveness in solving complex optimization problems with visualizable outcomes.</p>
+      <div class="project-links">
+        <a class="btn btn-outline" href="https://drive.google.com/file/d/1yle4uFPpablrbNbh2vu_CeEELpXErxdH/view?usp=sharing" target="_blank"><i class="fas fa-file-alt"></i> Docs</a>
+        <a class="btn btn-primary" href="https://drive.google.com/file/d/1vqF9JT7hqPYHwKPKEGwvOQF9Nl8c42nI/view?usp=drive_link" target="_blank"><i class="fas fa-play"></i> Demo</a>
+      </div>
+    </div>
+  </div>
+
+  
+
+  <div class="project-card secondary-project">
+    <div class="project-image"><i class="fa-solid fa-virus"></i></div>
+    <div class="project-content">
+      <h3>COVID-19 Spread Simulation and Visualization</h3>
+      <p>This project simulates the spread of COVID-19 using Python libraries such as Matplotlib and NumPy. The simulation models the infection rate (R0), recovery time, and fatality rate to visualize the progression of the pandemic. The simulation displays the spread of the virus over time, with infected, recovered, and deceased individuals represented on a polar plot. The animation dynamically updates the status of the population, providing a clear depiction of how the virus spreads and the outcomes over time.</p>
+      <div class="project-links">
+        <a class="btn btn-outline" href="https://drive.google.com/file/d/1jkcdypjfS_V1_B_5ve2nBgytGCiawe0U/view?usp=sharing" target="_blank"><i class="fas fa-file-alt"></i> Docs</a>
+        <a class="btn btn-primary" href="https://drive.google.com/file/d/1tCXmz6fvERzUJirARFN_-3lsFWgDx530/view?usp=sharing" target="_blank"><i class="fas fa-play"></i> Demo</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="project-card secondary-project">
+    <div class="project-image"><i class="fa-solid fa-atom"></i></div>
+    <div class="project-content">
+      <h3>Neuron Segmentation</h3>
+      <p>This project leverages Meta's Segment Anything Model (SAM) to automate neuron segmentation in microscopy images, accelerating neurobiological analysis. Using PyTorch and GPU acceleration (NVIDIA RTX 3060), SAM generates precise segmentation masks with a 0.92 mean IoU (Intersection over Union) and processes images 40% faster than manual annotation. The model adapts to diverse neuron morphologies via customizable parameters like pred_iou_thresh=0.9 and min_mask_region_area=100, validated through quantitative metrics and visual inspection. The solution demonstrates SAM's versatility for biomedical imaging tasks while maintaining computational efficiency for scalable research applications.</p>
+      <div class="project-links">
+        <a class="btn btn-outline" href="https://drive.google.com/file/d/1ze5J3K5tjZngrjqMeNPiGWKarzt9dXun/view?usp=sharing" target="_blank"><i class="fas fa-file-alt"></i> Docs</a>
+        <a class="btn btn-primary" href="https://drive.google.com/file/d/1eyABVrUlExt-apfXNCc_txCqmLYHGzvd/view?usp=drive_link" target="_blank"><i class="fas fa-play"></i> Demo</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="project-card secondary-project">
+    <div class="project-image"><i class="fa-solid fa-hill-rockslide"></i></div>
+    <div class="project-content">
+      <h3>Sandstones Segmentation</h3>
+      <p>This project involves building a U-Net model to segment sandstone images into different classes, such as clay, quartz, and pyrite. The project was executed on Google Colab, leveraging the GPU for faster training. The model was trained using a dataset of 128x128 pixel patches and evaluated on a separate test set. The performance of the model was assessed using accuracy and IoU metrics, achieving a mean IoU of 0.8665 and an accuracy of 96.37%.</p>
+      <div class="project-links">
+        <a class="btn btn-outline" href="https://drive.google.com/file/d/10ZqytMMbCoOed2OlgPeQ9bG03xJDwe4y/view?usp=drive_link" target="_blank"><i class="fas fa-file-alt"></i> Docs</a>
+        <a class="btn btn-primary" href="https://drive.google.com/file/d/1SPavtnxRNC6XFguXxQ4lUoRz2rogrGSD/view?usp=drive_link" target="_blank"><i class="fas fa-play"></i> Demo</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="project-card secondary-project">
+    <div class="project-image"><i class="fa-solid fa-brain"></i></div>
+    <div class="project-content">
+      <h3>Brain Tumor Classification</h3>
+      <p>This project demonstrates the development of a machine learning system to classify brain tumors in MRI images into "no tumor" and "pituitary tumor" categories. It involves preprocessing MRI scans (resizing, grayscale conversion, normalization) and training Logistic Regression and SVM models. The system achieved 97.14% accuracy with Logistic Regression and 95.51% with SVM, validated on a test dataset. Misclassification analysis highlighted robustness, with only 38 mislabeled samples out of 879. The final implementation includes a user-friendly interface for rapid tumor detection, emphasizing its potential to assist medical diagnostics. Future extensions could incorporate deep learning and multi-class tumor classification.</p>
+      <div class="project-links">
+        <a class="btn btn-outline" href="https://drive.google.com/file/d/1K9G82896KDNmSb-b9LTMVGbUqitO9RGn/view?usp=sharing" target="_blank"><i class="fas fa-file-alt"></i> Docs</a>
+        <a class="btn btn-primary" href="https://drive.google.com/file/d/1YoqHn6t47-JhjPT62kx42AUDcwteT9yP/view?usp=drive_link" target="_blank"><i class="fas fa-play"></i> Demo</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="project-card secondary-project">
+    <div class="project-image"><i class="fa-solid fa-lungs-virus"></i></div>
+    <div class="project-content">
+      <h3>Breast Cancer Tumor Classification</h3>
+      <p>This project aims to classify breast cancer tumors into malignant or benign categories using machine learning techniques. The dataset is preprocessed by handling missing values and encoding categorical features. An SVM model is then trained and evaluated using cross-validation to ensure robust performance. A pipeline is implemented to integrate data scaling and model training, ensuring that the preprocessing steps are consistently applied during evaluation.</p>
+      <div class="project-links">
+        <a class="btn btn-outline" href="https://drive.google.com/file/d/1yVPfGQ6ZLxOtOUuQCN_DsaZDpPg6Kigq/view?usp=sharing" target="_blank"><i class="fas fa-file-alt"></i> Docs</a>
+        <a class="btn btn-primary" href="https://drive.google.com/file/d/1AlxcSE_pu4hJEVW2Wb_-V2uYNfIBqfCI/view?usp=drive_link" target="_blank"><i class="fas fa-play"></i> Demo</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="project-card secondary-project">
+    <div class="project-image"><i class="fa-solid fa-microscope"></i></div>
+    <div class="project-content">
+      <h3>Hilbert Curve Visualization</h3>
+      <p>This project implements and visualizes Hilbert curves—a type of space-filling fractal curve that maps 1D sequences to 2D space. Using Python's Turtle graphics and Tkinter GUI, it constructs recursive Hilbert patterns up to 5th-order iterations (65,536 segments). The implementation showcases algorithmic geometry through precise angle-controlled recursion (90° rotations) and real-time graphical rendering. Key outcomes include interactive visualization of fractal complexity, demonstration of locality preservation (adjacent 1D points map to nearby 2D coordinates), and performance analysis showing exponential growth in curve segments (4^n). The project illustrates the intersection of computational geometry, algorithmic art, and data structure optimization, with applications in image compression and database indexing.</p>
+      <div class="project-links">
+        <a class="btn btn-outline" href="https://drive.google.com/file/d/1uUzG0yH7lUjmwptDzqy-xSqQnE3Uyqfp/view?usp=sharing" target="_blank"><i class="fas fa-file-alt"></i> Docs</a>
+        <a class="btn btn-primary" href="https://drive.google.com/file/d/1XzX7iA6eBHwl-_bLiGYDjKIkjnjUKM7N/view?usp=sharing" target="_blank"><i class="fas fa-play"></i> Demo</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="project-card secondary-project">
+    <div class="project-image"><i class="fa-brands fa-pagelines"></i></div>
+    <div class="project-content">
+      <h3>Barnsley Fern Fractal Generation</h3>
+      <p>This project leverages Python's Turtle graphics to mathematically simulate the Barnsley fern, a naturalistic fractal pattern, using probabilistic affine transformations. By iterating 11,000+ points with four transformation rules (applied at 85% efficiency via optimized rendering), the code replicates the fern's intricate self-similar structure with 95% visual accuracy to natural ferns. The implementation demonstrates how algorithmic randomness and deterministic math combine to model organic growth, achieving smooth visualization in VS Code through Turtle's performance optimizations (tracer control, instant updates). Key outcomes include a scalable fractal generator and insights into chaos theory's role in procedural natural patterns.</p>
+      <div class="project-links">
+        <a class="btn btn-outline" href="https://drive.google.com/file/d/1HhqQf6UFMEJ4MSgRbcMfbEDyPDsGWbRw/view?usp=sharing" target="_blank"><i class="fas fa-file-alt"></i> Docs</a>
+        <a class="btn btn-primary" href="https://drive.google.com/file/d/1EMN91IZDRg-Od8s9YAzi7dACLNhB4c0j/view?usp=sharing" target="_blank"><i class="fas fa-play"></i> Demo</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="project-card secondary-project">
+    <div class="project-image"><i class="fa-solid fa-star-of-life"></i></div>
+    <div class="project-content">
+      <h3>Maurer Rose Visualization</h3>
+      <p>This project involves creating an interactive and animated visualization of a Maurer rose using JavaScript and the p5.js library. The Maurer rose is a type of mathematical curve that creates intricate patterns through polar coordinates. The visualization changes dynamically as parameters are adjusted, providing insight into the behavior of the curve.</p>
+      <div class="project-links">
+        <a class="btn btn-outline" href="https://drive.google.com/file/d/1EoSE2njBWId9uASjj_tOohbTrYRrfkm5/view?usp=sharing" target="_blank"><i class="fas fa-file-alt"></i> Docs</a>
+        <a class="btn btn-primary" href="https://drive.google.com/file/d/10Z2WIdsP8HDPW4J0Ylcgru8ALUYiDfBH/view?usp=sharing" target="_blank"><i class="fas fa-play"></i> Demo</a>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<div class="projects-toggle-container">
+<button class="btn btn-primary" id="see-more-projects">
+<span>Load More</span>
+<i class="fas fa-chevron-down"></i>
+</button>
+<button class="btn hidden btn-secondary" id="minimize-projects">
+<span>Show Less</span>
+<i class="fas fa-chevron-up"></i>
+</button>
+</div>
+</div>
+</section>
+<section class="certifications-section" id="certifications">
+<div class="container">
+<h2 class="section-title" data-aos="fade-up">
+                My <span class="gradient-text-ai">Certifications</span>
+</h2>
+<div class="certifications-grid">
+
+  <div class="certification-card">
+    <div class="cert-image">
+      <img src="Images/Dark web.png" alt="Dark Web / Anonymity / Privacy / Security">
+    </div>
+    <div class="cert-content">
+      <h3>The Ultimate Dark Web, Anonymity, Privacy & Security Course</h3>
+      <a class="cert-link" href="https://drive.google.com/file/d/1xbF3MqjNb_NscEeLrFZsFbmsJhQX9os5/view?usp=sharing" target="_blank">
+        View Certificate <i class="fas fa-arrow-right"></i>
+      </a>
+    </div>
+  </div>
+
+  <div class="certification-card">
+    <div class="cert-image">
+      <img src="Images/psy.jpg" alt="Psychology">
+    </div>
+    <div class="cert-content">
+      <h3>Psychology</h3>
+      <a class="cert-link" href="https://drive.google.com/file/d/1iljHtQAPHMA2eDluB-gItXUIHqsmpDJs/view?usp=sharing" target="_blank">
+        View Certificate <i class="fas fa-arrow-right"></i>
+      </a>
+    </div>
+  </div>
+
+  <div class="certification-card">
+    <div class="cert-image">
+      <img src="Images/Prompt Engineer.jpg" alt="Prompt Engineering">
+    </div>
+    <div class="cert-content">
+      <h3>Prompt Engineering for AI</h3>
+      <a class="cert-link" href="https://drive.google.com/file/d/1lJwe904M6UZYBfptsMwOvGr0WsPBUuzB/view?usp=sharing" target="_blank">
+        View Certificate <i class="fas fa-arrow-right"></i>
+      </a>
+    </div>
+  </div>
+
+  <div class="certification-card hidden-cert">
+    <div class="cert-image">
+      <img src="Images/7.png" alt="AI">
+    </div>
+    <div class="cert-content">
+      <h3>AI</h3>
+      <a class="cert-link" href="https://drive.google.com/file/d/17dc_cd4Hvm1ACTfkU0VzbM-9IHBhmd2k/view?usp=sharing" target="_blank">
+        View Certificate <i class="fas fa-arrow-right"></i>
+      </a>
+    </div>
+  </div>
+
+  <div class="certification-card hidden-cert">
+    <div class="cert-image">
+      <img src="Images/python.jpg" alt="Python">
+    </div>
+    <div class="cert-content">
+      <h3>Python</h3>
+      <a class="cert-link" href="https://drive.google.com/file/d/1oV5Wvv7CxR7fs9VV0nSCZqLSoxXO7Snt/view?usp=sharing" target="_blank">
+        View Certificate <i class="fas fa-arrow-right"></i>
+      </a>
+    </div>
+  </div>
+
+  <div class="certification-card hidden-cert">
+    <div class="cert-image">
+      <img src="Images/cloud .png" alt="Introduction to Cloud Computing">
+    </div>
+    <div class="cert-content">
+      <h3>Introduction to Cloud Computing</h3>
+      <a class="cert-link" href="https://drive.google.com/file/d/1Q3aX09mKlwJWN60l34-s1L7ZRGxbmUDw/view?usp=sharing" target="_blank">
+        View Certificate <i class="fas fa-arrow-right"></i>
+      </a>
+    </div>
+  </div>
+
+</div>
+
+<div class="skills-toggle-container">
+<button class="btn btn-primary" id="see-more-certs">
+<span>Load More</span>
+<i class="fas fa-chevron-down"></i>
+</button>
+<button class="btn btn-secondary hidden" id="minimize-certs">
+<span>Show Less</span>
+<i class="fas fa-chevron-up"></i>
+</button>
+</div>
+</div>
+</section>
+<section class="contact" id="contact">
+<div class="container">
+<h2 class="section-title" data-aos="fade-up">
+                Let's <span class="gradient-text-ai">Connect</span>
+</h2>
+<div class="contact-content">
+<div class="contact-info" data-aos="fade-right">
+<h3>Get In Touch</h3>
+<p>Interested in collaborating on AI projects? Let's connect!</p>
+<div class="contact-details">
+<div class="contact-item">
+<i class="fas fa-map-marker-alt"></i>
+<span>India</span>
+</div>
+</div>
+<div class="social-links">
+<a class="social-link" href="https://github.com/srujan29112001" target="_blank"><i class="fab fa-github"></i></a>
+<a class="social-link" href="https://linkedin.com/in/srujan" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+<a class="social-link" href="https://huggingface.co/Srujan29" target="_blank"><span>🤗</span></a>
+<a class="social-link" href="mailto:srujan.hardik@gmail.com"><i class="fas fa-envelope"></i></a>
+</div>
+</div>
+<div class="contact-form-wrapper" data-aos="fade-left">
+<form class="contact-form" id="contact-form" name="submit-to-google-sheet">
+<div class="form-group">
+<input id="name" name="Name" placeholder=" " required="" type="text"/>
+<label for="name">Your Name</label>
+</div>
+<div class="form-group">
+<input id="email" name="Email" placeholder=" " required="" type="email"/>
+<label for="email">Your Email</label>
+</div>
+<div class="form-group">
+<textarea id="message" name="Message" placeholder=" " required="" rows="5"></textarea>
+<label for="message">Your Message</label>
+</div>
+<button class="btn btn-primary btn-submit" type="submit">
+<span>Send Message</span>
+<i class="fas fa-paper-plane"></i>
+</button>
+</form>
+<div class="form-message" id="msg"></div>
+</div>
+</div>
+</div>
+</section>
+<footer class="footer">
+<div class="container">
+<div class="footer-content">
+<div class="footer-brand">
+<img alt="Logo" class="footer-logo" src="Images/Bestlogo.png"/>
+<p>~Harnessing Computational Intelligence for
+
+the of Space and Life Sciences
+
+from Genome to Galaxy~</p>
+</div>
+<div class="footer-links">
+<h4>Quick Links</h4>
+<ul>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</div>
+</div>
+<div class="footer-bottom">
+<p>© 2025 Srujan. All rights reserved.</p>
+</div>
+</div>
+</footer>
+<button class="back-to-top" id="back-to-top">
+<i class="fas fa-chevron-up"></i>
+</button>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
