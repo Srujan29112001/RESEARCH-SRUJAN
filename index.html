@@ -22,7 +22,23 @@
   overflow-wrap: anywhere;    /* prevent layout breaking on long strings */
 }
 </style>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-4XWCFM34BJ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
+  gtag('config', 'G-4XWCFM34BJ');
+</script>
+
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "u96ly43zg0");
+</script>
 </head>
 <body>
 <canvas class="particle-canvas-fixed" id="particle-canvas"></canvas>
@@ -70,7 +86,7 @@
 </div>
 </div>
 </nav>
-<section class="hero" id="home">
+<section class="hero" id="home" data-track-section="home">
 <div class="container hero-content">
 <div class="hero-inner">
 <div class="hero-text">
@@ -106,7 +122,7 @@ from Genome to Galaxy~</p>
 </div>
 </div>
 </section>
-<section class="skills-section" id="skills">
+<section class="skills-section" id="skills" data-track-section="skills">
 <div class="container">
 <h2 class="section-title" data-aos="fade-up">My Research <span class="gradient-text-ai">Skills</span></h2>
 <div class="skills-content">
@@ -391,7 +407,7 @@ from Genome to Galaxy~</p>
 </section>
 
 <!-- ============ Technical Expertise Section ============ -->
-<section class="tech-stack-section" id="tech-stack">
+<section class="tech-stack-section" id="tech-stack" data-track-section="tech-stack">
 <div class="container">
 <h2 class="section-title" data-aos="fade-up">
 Technical <span class="gradient-text-ai">Expertise</span>
@@ -716,7 +732,7 @@ Technical <span class="gradient-text-ai">Expertise</span>
 </div>
 </section>
 
-<section class="projects-section" id="projects">
+<section class="projects-section" id="projects" data-track-section="projects">
 <div class="container">
 <h2 class="section-title" data-aos="fade-up">Featured Research <span class="gradient-text-ai">Projects</span></h2>
 <div class="projects-grid">
@@ -727,8 +743,8 @@ Technical <span class="gradient-text-ai">Expertise</span>
       <h3>Exoplanet Detection via Light Curves</h3>
       <p>This project identifies exoplanets by processing Kepler/TESS mission data using Python's Lightkurve library. Light curves of stars are extracted from pixel files, flattened to remove noise, and phase-folded to amplify periodic transit signals. A Box Least Squares (BLS) periodogram pinpoints orbital periods, enabling the detection of a candidate exoplanet with a 5.7-day orbital period, 2-hour transit duration, and 0.1% flux dip—metrics consistent with Earth-sized planets. By automating trend removal and signal validation, the project achieved >95% confidence in transit detection, demonstrating an efficient pipeline for exoplanet candidate screening.</p>
       <div class="project-links">
-        <a class="btn btn-outline" href="https://drive.google.com/file/d/1KXcRJdTl0CW1dJ_MxOBg3a3t6YhAz9qM/view?usp=sharing" target="_blank"><i class="fas fa-file-alt"></i> Docs</a>
-        <a class="btn btn-primary" href="https://drive.google.com/file/d/1LQff1VixZMduQ_hDVV2I9tHSOJWIolez/view?usp=sharing" target="_blank"><i class="fas fa-play"></i> Demo</a>
+        <a class="btn btn-outline" href="https://drive.google.com/file/d/1KXcRJdTl0CW1dJ_MxOBg3a3t6YhAz9qM/view?usp=sharing" target="_blank" data-track-click="project_docs_click" data-track-label="Docs - Exoplanet Detection via Light Curves"><i class="fas fa-file-alt"></i> Docs</a>
+        <a class="btn btn-primary" href="https://drive.google.com/file/d/1LQff1VixZMduQ_hDVV2I9tHSOJWIolez/view?usp=sharing" target="_blank" data-track-click="project_demo_click" data-track-label="Demo - Exoplanet Detection via Light Curves"><i class="fas fa-play"></i> Demo</a>
       </div>
     </div>
   </div>
@@ -739,8 +755,8 @@ Technical <span class="gradient-text-ai">Expertise</span>
       <h3>3D Protein Structure Prediction Using AlphaFold</h3>
       <p>This project leverages AlphaFold's deep learning framework to predict high-accuracy 3D protein structures from amino acid sequences. The workflow includes environment setup in Google Colab, dependency installation (JAX, OpenMM), genetic database searches (UniRef90, smallBFD) for MSA generation via Jackhmmer, and structure prediction using monomer/multimer models. Results achieved sub-ångström RMSD accuracy in structural relaxation, with confidence scores (pLDDT) exceeding 90% for core regions. Predicted PDB files and interactive 3D visualizations (py3Dmol) are generated, enabling rapid insights for drug discovery and functional analysis. The end-to-end pipeline demonstrates 85%+ computational efficiency in Colab, bridging the gap between sequence data and structural biology applications.</p>
       <div class="project-links">
-        <a class="btn btn-outline" href="https://drive.google.com/file/d/1-tHGikDQ0KsKPzh1gkqWQimGbgzbCwzo/view?usp=sharing" target="_blank"><i class="fas fa-file-alt"></i> Docs</a>
-        <a class="btn btn-primary" href="https://drive.google.com/file/d/1UXka9_8ueddFWr2_LIjX3dsi6l4Sc0aJ/view?usp=drive_link" target="_blank"><i class="fas fa-play"></i> Demo</a>
+        <a class="btn btn-outline" href="https://drive.google.com/file/d/1-tHGikDQ0KsKPzh1gkqWQimGbgzbCwzo/view?usp=sharing" target="_blank" data-track-click="project_docs_click" data-track-label="Docs - 3D Protein Structure Prediction Using AlphaFold"><i class="fas fa-file-alt"></i> Docs</a>
+        <a class="btn btn-primary" href="https://drive.google.com/file/d/1UXka9_8ueddFWr2_LIjX3dsi6l4Sc0aJ/view?usp=drive_link" target="_blank" data-track-click="project_demo_click" data-track-label="Demo - 3D Protein Structure Prediction Using AlphaFold"><i class="fas fa-play"></i> Demo</a>
       </div>
     </div>
   </div>
@@ -751,8 +767,8 @@ Technical <span class="gradient-text-ai">Expertise</span>
       <h3>Quantum Particle Detection Dynamics</h3>
       <p>This project analyzes the spatiotemporal evolution of a quantum particle initially localized as a Gaussian wavepacket with zero average momentum. By computing ⟨p²⟩ classically, we derived the arrival time T = mLℏ²/(2a²) (simplified to L² for unit parameters) and contrasted it with quantum dynamics via Fourier expansion and time-dependent Schrödinger solutions. Using SymPy for symbolic derivations and SciPy for numerical integration, we calculated the time-evolving probability P(x&gt;L,t), observing non-zero detection probabilities even at t&lt;T, a hallmark of quantum behavior. Results showed P rising gradually from 0% to ~50% over t=0→30, deviating sharply from the classical prediction of abrupt detection at T. Visualizations highlighted this discrepancy, underscoring quantum tunneling and wavepacket dispersion. The project bridges classical intuition with quantum reality, leveraging computational tools (NumPy, Matplotlib) to quantify and visualize probabilistic dynamics.</p>
       <div class="project-links">
-        <a class="btn btn-outline" href="https://drive.google.com/file/d/12XYJe34e7WApSzFrnGbV_7lyn9rkIH5S/view?usp=sharing" target="_blank"><i class="fas fa-file-alt"></i> Docs</a>
-        <a class="btn btn-primary" href="https://drive.google.com/file/d/1kwQhBWSqk0v61aSamhB1i5ZLjmVYpnu9/view?usp=sharing" target="_blank"><i class="fas fa-play"></i> Demo</a>
+        <a class="btn btn-outline" href="https://drive.google.com/file/d/12XYJe34e7WApSzFrnGbV_7lyn9rkIH5S/view?usp=sharing" target="_blank" data-track-click="project_docs_click" data-track-label="Docs - Quantum Particle Detection Dynamics"><i class="fas fa-file-alt"></i> Docs</a>
+        <a class="btn btn-primary" href="https://drive.google.com/file/d/1kwQhBWSqk0v61aSamhB1i5ZLjmVYpnu9/view?usp=sharing" target="_blank" data-track-click="project_demo_click" data-track-label="Demo - Quantum Particle Detection Dynamics"><i class="fas fa-play"></i> Demo</a>
       </div>
     </div>
   </div>
@@ -763,7 +779,8 @@ Technical <span class="gradient-text-ai">Expertise</span>
       <h3>NeuroPsych Trading Assistant: A Neuromorphic Multi-Agent System with Brain-Computer Interface for Computational Psychiatry in Financial Markets</h3>
       <p>The NeuroPsych Trading Assistant represents a groundbreaking convergence of neuromorphic computing, computational psychiatry, robotics, and electronic systems design to address the critical mental health crisis among retail traders. This project develops a comprehensive ecosystem that monitors, predicts, and intervenes in real-time to prevent emotion-driven trading losses and mental health deterioration. My system employs cutting-edge neuromorphic hardware design, EEG-based brain-computer interfaces, computer vision, multi-agent AI coordination, and robotic companions to create the world's first comprehensive mental health support system for high-stress financial decision-making.</p>
       <div class="project-links">
-        <a class="btn btn-outline" href="#" target="_blank"><i class="fas fa-file-alt"></i> Docs  (Coming Soon)</a> <a class="btn btn-primary" href="#" target="_blank"><i class="fas fa-play"></i> Demo  (Coming Soon)</a>
+        <a class="btn btn-outline" href="#" target="_blank" data-track-click="project_docs_click" data-track-label="Docs - NeuroPsych Trading Assistant"><i class="fas fa-file-alt"></i> Docs  (Coming Soon)</a>
+        <a class="btn btn-primary" href="#" target="_blank" data-track-click="project_demo_click" data-track-label="Demo - NeuroPsych Trading Assistant"><i class="fas fa-play"></i> Demo  (Coming Soon)</a>
       </div>
     </div>
   </div>
@@ -774,8 +791,8 @@ Technical <span class="gradient-text-ai">Expertise</span>
       <h3>Engineering (UG) Group Project (Capstone Project)</h3>
       <p>Visible light Communication System (LiFi based PC to PC communication System).</p>
       <div class="project-links">
-        <a class="btn btn-outline" href="https://drive.google.com/file/d/1xaGgViC6ZqSG_RMIFcPvBzCTVtBHB8PN/view?usp=sharing" target="_blank"><i class="fas fa-file-alt"></i> Docs</a>
-        <a class="btn btn-primary" href="https://drive.google.com/file/d/1LoNq_7YDIDbSJ2BDyVCWGmynYpG1KhDB/view?usp=drive_link" target="_blank"><i class="fas fa-play"></i> Demo</a>
+        <a class="btn btn-outline" href="https://drive.google.com/file/d/1xaGgViC6ZqSG_RMIFcPvBzCTVtBHB8PN/view?usp=sharing" target="_blank" data-track-click="project_docs_click" data-track-label="Docs - Engineering (UG) Group Project (Capstone Project)"><i class="fas fa-file-alt"></i> Docs</a>
+        <a class="btn btn-primary" href="https://drive.google.com/file/d/1LoNq_7YDIDbSJ2BDyVCWGmynYpG1KhDB/view?usp=drive_link" target="_blank" data-track-click="project_demo_click" data-track-label="Demo - Engineering (UG) Group Project (Capstone Project)"><i class="fas fa-play"></i> Demo</a>
       </div>
     </div>
   </div>
@@ -786,8 +803,8 @@ Technical <span class="gradient-text-ai">Expertise</span>
       <h3>Cellular Automata Dynamics Explorer</h3>
       <p>This project simulates and visualizes emergent behaviors in 1D/2D cellular automata using Python, cellpylib, and Matplotlib. By implementing rules like Rule 30, Rule 110, Conway's Game of Life, and Totalistic Rule 126, it demonstrates how simple rules generate complex patterns. Custom animations (up to 250 timesteps) reveal phase transitions, self-replication, and chaos. Key outcomes: simulated 4+ rules across 1D/2D models, quantified emergent behaviors (e.g., glider propagation in Game of Life), and interactive visualizations showing rule-dependent evolution. The project bridges theoretical concepts with computational experimentation, highlighting cellular automata's role in complexity science and generative systems.</p>
       <div class="project-links">
-        <a class="btn btn-outline" href="https://drive.google.com/file/d/1-mWXbkm4SXeZNGVXM8Y2xHCfKallwKqs/view?usp=sharing" target="_blank"><i class="fas fa-file-alt"></i> Docs</a>
-        <a class="btn btn-primary" href="https://drive.google.com/file/d/16DRNkKl4_CKk-Bjgc4iUxLL6zG0w_6wp/view?usp=drive_link" target="_blank"><i class="fas fa-play"></i> Demo</a>
+        <a class="btn btn-outline" href="https://drive.google.com/file/d/1-mWXbkm4SXeZNGVXM8Y2xHCfKallwKqs/view?usp=sharing" target="_blank" data-track-click="project_docs_click" data-track-label="Docs - Cellular Automata Dynamics Explorer"><i class="fas fa-file-alt"></i> Docs</a>
+        <a class="btn btn-primary" href="https://drive.google.com/file/d/16DRNkKl4_CKk-Bjgc4iUxLL6zG0w_6wp/view?usp=drive_link" target="_blank" data-track-click="project_demo_click" data-track-label="Demo - Cellular Automata Dynamics Explorer"><i class="fas fa-play"></i> Demo</a>
       </div>
     </div>
   </div>
@@ -798,22 +815,20 @@ Technical <span class="gradient-text-ai">Expertise</span>
       <h3>Simulation Of Evolution</h3>
       <p>This project simulates evolutionary principles using a genetic algorithm to optimize a population of randomly generated images toward a target color. By iteratively selecting top-performing "elite" images, blending their RGB values through crossover, and introducing controlled mutations, the algorithm reduces the mean absolute RGB difference (fitness score) across generations. Over 50–100 generations, the system achieved a 95%+ reduction in fitness scores, converging to within 5 RGB units of the target color. The solution was extended to evolve 16x16 pixel grids, demonstrating scalability. Key metrics include mutation rate optimization (0.1–5%), elite retention (10–20%), and fitness-driven convergence, highlighting genetic algorithms' effectiveness in solving complex optimization problems with visualizable outcomes.</p>
       <div class="project-links">
-        <a class="btn btn-outline" href="https://drive.google.com/file/d/1yle4uFPpablrbNbh2vu_CeEELpXErxdH/view?usp=sharing" target="_blank"><i class="fas fa-file-alt"></i> Docs</a>
-        <a class="btn btn-primary" href="https://drive.google.com/file/d/1vqF9JT7hqPYHwKPKEGwvOQF9Nl8c42nI/view?usp=drive_link" target="_blank"><i class="fas fa-play"></i> Demo</a>
+        <a class="btn btn-outline" href="https://drive.google.com/file/d/1yle4uFPpablrbNbh2vu_CeEELpXErxdH/view?usp=sharing" target="_blank" data-track-click="project_docs_click" data-track-label="Docs - Simulation Of Evolution"><i class="fas fa-file-alt"></i> Docs</a>
+        <a class="btn btn-primary" href="https://drive.google.com/file/d/1vqF9JT7hqPYHwKPKEGwvOQF9Nl8c42nI/view?usp=drive_link" target="_blank" data-track-click="project_demo_click" data-track-label="Demo - Simulation Of Evolution"><i class="fas fa-play"></i> Demo</a>
       </div>
     </div>
   </div>
-
   
-
   <div class="project-card secondary-project">
     <div class="project-image"><i class="fa-solid fa-virus"></i></div>
     <div class="project-content">
       <h3>COVID-19 Spread Simulation and Visualization</h3>
       <p>This project simulates the spread of COVID-19 using Python libraries such as Matplotlib and NumPy. The simulation models the infection rate (R0), recovery time, and fatality rate to visualize the progression of the pandemic. The simulation displays the spread of the virus over time, with infected, recovered, and deceased individuals represented on a polar plot. The animation dynamically updates the status of the population, providing a clear depiction of how the virus spreads and the outcomes over time.</p>
       <div class="project-links">
-        <a class="btn btn-outline" href="https://drive.google.com/file/d/1jkcdypjfS_V1_B_5ve2nBgytGCiawe0U/view?usp=sharing" target="_blank"><i class="fas fa-file-alt"></i> Docs</a>
-        <a class="btn btn-primary" href="https://drive.google.com/file/d/1tCXmz6fvERzUJirARFN_-3lsFWgDx530/view?usp=sharing" target="_blank"><i class="fas fa-play"></i> Demo</a>
+        <a class="btn btn-outline" href="https://drive.google.com/file/d/1jkcdypjfS_V1_B_5ve2nBgytGCiawe0U/view?usp=sharing" target="_blank" data-track-click="project_docs_click" data-track-label="Docs - COVID-19 Spread Simulation and Visualization"><i class="fas fa-file-alt"></i> Docs</a>
+        <a class="btn btn-primary" href="https://drive.google.com/file/d/1tCXmz6fvERzUJirARFN_-3lsFWgDx530/view?usp=sharing" target="_blank" data-track-click="project_demo_click" data-track-label="Demo - COVID-19 Spread Simulation and Visualization"><i class="fas fa-play"></i> Demo</a>
       </div>
     </div>
   </div>
@@ -824,8 +839,8 @@ Technical <span class="gradient-text-ai">Expertise</span>
       <h3>Neuron Segmentation</h3>
       <p>This project leverages Meta's Segment Anything Model (SAM) to automate neuron segmentation in microscopy images, accelerating neurobiological analysis. Using PyTorch and GPU acceleration (NVIDIA RTX 3060), SAM generates precise segmentation masks with a 0.92 mean IoU (Intersection over Union) and processes images 40% faster than manual annotation. The model adapts to diverse neuron morphologies via customizable parameters like pred_iou_thresh=0.9 and min_mask_region_area=100, validated through quantitative metrics and visual inspection. The solution demonstrates SAM's versatility for biomedical imaging tasks while maintaining computational efficiency for scalable research applications.</p>
       <div class="project-links">
-        <a class="btn btn-outline" href="https://drive.google.com/file/d/1ze5J3K5tjZngrjqMeNPiGWKarzt9dXun/view?usp=sharing" target="_blank"><i class="fas fa-file-alt"></i> Docs</a>
-        <a class="btn btn-primary" href="https://drive.google.com/file/d/1eyABVrUlExt-apfXNCc_txCqmLYHGzvd/view?usp=drive_link" target="_blank"><i class="fas fa-play"></i> Demo</a>
+        <a class="btn btn-outline" href="https://drive.google.com/file/d/1ze5J3K5tjZngrjqMeNPiGWKarzt9dXun/view?usp=sharing" target="_blank" data-track-click="project_docs_click" data-track-label="Docs - Neuron Segmentation"><i class="fas fa-file-alt"></i> Docs</a>
+        <a class="btn btn-primary" href="https://drive.google.com/file/d/1eyABVrUlExt-apfXNCc_txCqmLYHGzvd/view?usp=drive_link" target="_blank" data-track-click="project_demo_click" data-track-label="Demo - Neuron Segmentation"><i class="fas fa-play"></i> Demo</a>
       </div>
     </div>
   </div>
@@ -836,8 +851,8 @@ Technical <span class="gradient-text-ai">Expertise</span>
       <h3>Sandstones Segmentation</h3>
       <p>This project involves building a U-Net model to segment sandstone images into different classes, such as clay, quartz, and pyrite. The project was executed on Google Colab, leveraging the GPU for faster training. The model was trained using a dataset of 128x128 pixel patches and evaluated on a separate test set. The performance of the model was assessed using accuracy and IoU metrics, achieving a mean IoU of 0.8665 and an accuracy of 96.37%.</p>
       <div class="project-links">
-        <a class="btn btn-outline" href="https://drive.google.com/file/d/10ZqytMMbCoOed2OlgPeQ9bG03xJDwe4y/view?usp=drive_link" target="_blank"><i class="fas fa-file-alt"></i> Docs</a>
-        <a class="btn btn-primary" href="https://drive.google.com/file/d/1SPavtnxRNC6XFguXxQ4lUoRz2rogrGSD/view?usp=drive_link" target="_blank"><i class="fas fa-play"></i> Demo</a>
+        <a class="btn btn-outline" href="https://drive.google.com/file/d/10ZqytMMbCoOed2OlgPeQ9bG03xJDwe4y/view?usp=drive_link" target="_blank" data-track-click="project_docs_click" data-track-label="Docs - Sandstones Segmentation"><i class="fas fa-file-alt"></i> Docs</a>
+        <a class="btn btn-primary" href="https://drive.google.com/file/d/1SPavtnxRNC6XFguXxQ4lUoRz2rogrGSD/view?usp=drive_link" target="_blank" data-track-click="project_demo_click" data-track-label="Demo - Sandstones Segmentation"><i class="fas fa-play"></i> Demo</a>
       </div>
     </div>
   </div>
@@ -848,8 +863,8 @@ Technical <span class="gradient-text-ai">Expertise</span>
       <h3>Brain Tumor Classification</h3>
       <p>This project demonstrates the development of a machine learning system to classify brain tumors in MRI images into "no tumor" and "pituitary tumor" categories. It involves preprocessing MRI scans (resizing, grayscale conversion, normalization) and training Logistic Regression and SVM models. The system achieved 97.14% accuracy with Logistic Regression and 95.51% with SVM, validated on a test dataset. Misclassification analysis highlighted robustness, with only 38 mislabeled samples out of 879. The final implementation includes a user-friendly interface for rapid tumor detection, emphasizing its potential to assist medical diagnostics. Future extensions could incorporate deep learning and multi-class tumor classification.</p>
       <div class="project-links">
-        <a class="btn btn-outline" href="https://drive.google.com/file/d/1K9G82896KDNmSb-b9LTMVGbUqitO9RGn/view?usp=sharing" target="_blank"><i class="fas fa-file-alt"></i> Docs</a>
-        <a class="btn btn-primary" href="https://drive.google.com/file/d/1YoqHn6t47-JhjPT62kx42AUDcwteT9yP/view?usp=drive_link" target="_blank"><i class="fas fa-play"></i> Demo</a>
+        <a class="btn btn-outline" href="https://drive.google.com/file/d/1K9G82896KDNmSb-b9LTMVGbUqitO9RGn/view?usp=sharing" target="_blank" data-track-click="project_docs_click" data-track-label="Docs - Brain Tumor Classification"><i class="fas fa-file-alt"></i> Docs</a>
+        <a class="btn btn-primary" href="https://drive.google.com/file/d/1YoqHn6t47-JhjPT62kx42AUDcwteT9yP/view?usp=drive_link" target="_blank" data-track-click="project_demo_click" data-track-label="Demo - Brain Tumor Classification"><i class="fas fa-play"></i> Demo</a>
       </div>
     </div>
   </div>
@@ -860,8 +875,8 @@ Technical <span class="gradient-text-ai">Expertise</span>
       <h3>Breast Cancer Tumor Classification</h3>
       <p>This project aims to classify breast cancer tumors into malignant or benign categories using machine learning techniques. The dataset is preprocessed by handling missing values and encoding categorical features. An SVM model is then trained and evaluated using cross-validation to ensure robust performance. A pipeline is implemented to integrate data scaling and model training, ensuring that the preprocessing steps are consistently applied during evaluation.</p>
       <div class="project-links">
-        <a class="btn btn-outline" href="https://drive.google.com/file/d/1yVPfGQ6ZLxOtOUuQCN_DsaZDpPg6Kigq/view?usp=sharing" target="_blank"><i class="fas fa-file-alt"></i> Docs</a>
-        <a class="btn btn-primary" href="https://drive.google.com/file/d/1AlxcSE_pu4hJEVW2Wb_-V2uYNfIBqfCI/view?usp=drive_link" target="_blank"><i class="fas fa-play"></i> Demo</a>
+        <a class="btn btn-outline" href="https://drive.google.com/file/d/1yVPfGQ6ZLxOtOUuQCN_DsaZDpPg6Kigq/view?usp=sharing" target="_blank" data-track-click="project_docs_click" data-track-label="Docs - Breast Cancer Tumor Classification"><i class="fas fa-file-alt"></i> Docs</a>
+        <a class="btn btn-primary" href="https://drive.google.com/file/d/1AlxcSE_pu4hJEVW2Wb_-V2uYNfIBqfCI/view?usp=drive_link" target="_blank" data-track-click="project_demo_click" data-track-label="Demo - Breast Cancer Tumor Classification"><i class="fas fa-play"></i> Demo</a>
       </div>
     </div>
   </div>
@@ -872,8 +887,8 @@ Technical <span class="gradient-text-ai">Expertise</span>
       <h3>Hilbert Curve Visualization</h3>
       <p>This project implements and visualizes Hilbert curves—a type of space-filling fractal curve that maps 1D sequences to 2D space. Using Python's Turtle graphics and Tkinter GUI, it constructs recursive Hilbert patterns up to 5th-order iterations (65,536 segments). The implementation showcases algorithmic geometry through precise angle-controlled recursion (90° rotations) and real-time graphical rendering. Key outcomes include interactive visualization of fractal complexity, demonstration of locality preservation (adjacent 1D points map to nearby 2D coordinates), and performance analysis showing exponential growth in curve segments (4^n). The project illustrates the intersection of computational geometry, algorithmic art, and data structure optimization, with applications in image compression and database indexing.</p>
       <div class="project-links">
-        <a class="btn btn-outline" href="https://drive.google.com/file/d/1uUzG0yH7lUjmwptDzqy-xSqQnE3Uyqfp/view?usp=sharing" target="_blank"><i class="fas fa-file-alt"></i> Docs</a>
-        <a class="btn btn-primary" href="https://drive.google.com/file/d/1XzX7iA6eBHwl-_bLiGYDjKIkjnjUKM7N/view?usp=sharing" target="_blank"><i class="fas fa-play"></i> Demo</a>
+        <a class="btn btn-outline" href="https://drive.google.com/file/d/1uUzG0yH7lUjmwptDzqy-xSqQnE3Uyqfp/view?usp=sharing" target="_blank" data-track-click="project_docs_click" data-track-label="Docs - Hilbert Curve Visualization"><i class="fas fa-file-alt"></i> Docs</a>
+        <a class="btn btn-primary" href="https://drive.google.com/file/d/1XzX7iA6eBHwl-_bLiGYDjKIkjnjUKM7N/view?usp=sharing" target="_blank" data-track-click="project_demo_click" data-track-label="Demo - Hilbert Curve Visualization"><i class="fas fa-play"></i> Demo</a>
       </div>
     </div>
   </div>
@@ -884,8 +899,8 @@ Technical <span class="gradient-text-ai">Expertise</span>
       <h3>Barnsley Fern Fractal Generation</h3>
       <p>This project leverages Python's Turtle graphics to mathematically simulate the Barnsley fern, a naturalistic fractal pattern, using probabilistic affine transformations. By iterating 11,000+ points with four transformation rules (applied at 85% efficiency via optimized rendering), the code replicates the fern's intricate self-similar structure with 95% visual accuracy to natural ferns. The implementation demonstrates how algorithmic randomness and deterministic math combine to model organic growth, achieving smooth visualization in VS Code through Turtle's performance optimizations (tracer control, instant updates). Key outcomes include a scalable fractal generator and insights into chaos theory's role in procedural natural patterns.</p>
       <div class="project-links">
-        <a class="btn btn-outline" href="https://drive.google.com/file/d/1HhqQf6UFMEJ4MSgRbcMfbEDyPDsGWbRw/view?usp=sharing" target="_blank"><i class="fas fa-file-alt"></i> Docs</a>
-        <a class="btn btn-primary" href="https://drive.google.com/file/d/1EMN91IZDRg-Od8s9YAzi7dACLNhB4c0j/view?usp=sharing" target="_blank"><i class="fas fa-play"></i> Demo</a>
+        <a class="btn btn-outline" href="https://drive.google.com/file/d/1HhqQf6UFMEJ4MSgRbcMfbEDyPDsGWbRw/view?usp=sharing" target="_blank" data-track-click="project_docs_click" data-track-label="Docs - Barnsley Fern Fractal Generation"><i class="fas fa-file-alt"></i> Docs</a>
+        <a class="btn btn-primary" href="https://drive.google.com/file/d/1EMN91IZDRg-Od8s9YAzi7dACLNhB4c0j/view?usp=sharing" target="_blank" data-track-click="project_demo_click" data-track-label="Demo - Barnsley Fern Fractal Generation"><i class="fas fa-play"></i> Demo</a>
       </div>
     </div>
   </div>
@@ -896,8 +911,8 @@ Technical <span class="gradient-text-ai">Expertise</span>
       <h3>Maurer Rose Visualization</h3>
       <p>This project involves creating an interactive and animated visualization of a Maurer rose using JavaScript and the p5.js library. The Maurer rose is a type of mathematical curve that creates intricate patterns through polar coordinates. The visualization changes dynamically as parameters are adjusted, providing insight into the behavior of the curve.</p>
       <div class="project-links">
-        <a class="btn btn-outline" href="https://drive.google.com/file/d/1EoSE2njBWId9uASjj_tOohbTrYRrfkm5/view?usp=sharing" target="_blank"><i class="fas fa-file-alt"></i> Docs</a>
-        <a class="btn btn-primary" href="https://drive.google.com/file/d/10Z2WIdsP8HDPW4J0Ylcgru8ALUYiDfBH/view?usp=sharing" target="_blank"><i class="fas fa-play"></i> Demo</a>
+        <a class="btn btn-outline" href="https://drive.google.com/file/d/1EoSE2njBWId9uASjj_tOohbTrYRrfkm5/view?usp=sharing" target="_blank" data-track-click="project_docs_click" data-track-label="Docs - Maurer Rose Visualization"><i class="fas fa-file-alt"></i> Docs</a>
+        <a class="btn btn-primary" href="https://drive.google.com/file/d/10Z2WIdsP8HDPW4J0Ylcgru8ALUYiDfBH/view?usp=sharing" target="_blank" data-track-click="project_demo_click" data-track-label="Demo - Maurer Rose Visualization"><i class="fas fa-play"></i> Demo</a>
       </div>
     </div>
   </div>
@@ -916,7 +931,7 @@ Technical <span class="gradient-text-ai">Expertise</span>
 </div>
 </div>
 </section>
-<section class="certifications-section" id="certifications">
+<section class="certifications-section" id="certifications" data-track-section="certifications">
 <div class="container">
 <h2 class="section-title" data-aos="fade-up">
                 My <span class="gradient-text-ai">Certifications</span>
@@ -1009,7 +1024,7 @@ Technical <span class="gradient-text-ai">Expertise</span>
 </div>
 </div>
 </section>
-<section class="contact" id="contact">
+<section class="contact" id="contact" data-track-section="contact">
 <div class="container">
 <h2 class="section-title" data-aos="fade-up">
                 Let's <span class="gradient-text-ai">Connect</span>
